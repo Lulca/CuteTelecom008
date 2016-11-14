@@ -1,11 +1,14 @@
 import React from 'react';
 import { Link, Match } from 'react-router';
+import ukraine from './img/Ukraine.png';
+import france from './img/France.png';
+import spain from './img/Spain.png';
 
 const Ukraine = ({params}) => {
 	return (
 		<div>
 			<h3>Ukraine</h3>
-			<img alt='img' src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Outline_of_Ukraine.svg/2000px-Outline_of_Ukraine.svg.png'/>
+			<img alt='img' src={ukraine}/>
 		</div>
 	);
 };
@@ -14,7 +17,7 @@ const France = ({params}) => {
 	return (
 		<div>
 			<h3>France</h3>
-			<img alt='img' src='https://upload.wikimedia.org/wikipedia/commons/c/c1/Flag_map_of_Greater_France.png'/>
+			<img alt='img' src={france}/>
 		</div>
 	);
 };
@@ -24,7 +27,7 @@ const Spain = ({params}) => {
 	return (
 		<div>
 			<h3>Spain</h3>
-			<img alt='img' src='http://www.lacasaagency.com/web/img/spain2.png'/>
+			<img alt='img' src={spain}/>
 		</div>
 	);
 };

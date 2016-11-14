@@ -1,11 +1,14 @@
 import React from 'react';
 import { Link, Match } from 'react-router';
+import russia from './img/Russia.png';
+import kazakhstan from './img/Kazakhstan.png';
+import china from './img/China.png';
 
 const Russia = ({params}) => {
 	return (
 		<div>
 			<h3>Russia</h3>
-			<img alt='img' src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Flag-map_of_Russia.svg/2000px-Flag-map_of_Russia.svg.png'/>
+			<img alt='img' src={russia}/>
 		</div>
 	);
 };
@@ -14,7 +17,7 @@ const Kazakhstan = ({params}) => {
 	return (
 		<div>
 			<h3>Kazakhstan</h3>
-			<img alt='img' src='http://mapsof.net/uploads/static-maps/Kazakhstan_flag_map.png'/>
+			<img alt='img' src={kazakhstan}/>
 		</div>
 	);
 };
@@ -24,7 +27,7 @@ const China = ({params}) => {
 	return (
 		<div>
 			<h3>China</h3>
-			<img alt='img' src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Flag_map_of_the_People's_Republic_of_China.png"/>
+			<img alt='img' src={china}/>
 		</div>
 	);
 };
