@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link, Match, Miss, Redirect } from 'react-router'
+import { BrowserRouter as Router, Link, Match, Redirect } from 'react-router'
 import Europe from './Europe';
 import America from './America';
 import Asia from './Asia'
@@ -38,7 +38,7 @@ class App extends Component {
                   <Link className='link' to='/america'>America</Link>
                 </li>
                 <button onClick={this.toggleState.bind(this)}>
-                  <img src='http://bldg5records.com/public/img/mobile-menu.png'/>
+                  <img alt='img' src='http://bldg5records.com/public/img/mobile-menu.png'/>
                 </button>
               </ul>
               </div>
