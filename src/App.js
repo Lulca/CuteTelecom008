@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link, Match, Miss } from 'react-router'
+import { BrowserRouter as Router, Link, Match, Miss, Redirect } from 'react-router'
 import Europe from './Europe';
 import America from './America';
 import Asia from './Asia'
@@ -11,7 +11,7 @@ class App extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {isOpened: true};
+    this.state = {isOpened: false};
   }
 
   toggleState() {
@@ -44,6 +44,7 @@ class App extends Component {
               </div>
               <hr/>
               <div className={classes} >
+                <Redirect to="/europe" />
                 <Match pattern='/europe' component={Europe}></Match>
                 <Match pattern='/asia' component={Asia}></Match>
                 <Match pattern='/america' component={America}></Match>
