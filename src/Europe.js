@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Match } from 'react-router';
+import { Link, Match, Redirect } from 'react-router';
 import ukraine from './img/Ukraine.png';
 import france from './img/France.png';
 import spain from './img/Spain.png';
@@ -41,6 +41,7 @@ const Europe = ({pathname}) => {
 				<li className='country-item'><Link className='country-link' to={`${pathname}/france`}>France</Link></li>
 				<li className='country-item'><Link className='country-link' to={`${pathname}/spain`}>Spain</Link></li>
 			</ul>
+			<Redirect to={`${pathname}/ukraine`} />
 			<Match exactly pattern={`${pathname}/ukraine`} component={Ukraine}/>
 			<Match exactly pattern={`${pathname}/france`} component={France}/>
 			<Match exactly pattern={`${pathname}/spain`} component={Spain}/>
